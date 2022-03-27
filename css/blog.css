@@ -1,0 +1,21 @@
+.results img {
+    width: 400px;
+    /* margin-top: 50px; */
+}
+
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.h1-post {
+    font-size: 20px;
+}
+
+a.card {
+    margin: 20px 0px;
+    text-decoration: none;
+}
