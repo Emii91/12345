@@ -3,14 +3,18 @@
     <head>
         <meta charset="UTF-8" />
         <title>Home</title>
-        <meta name="description" content="">
+        <meta name="description" content="This is the frontpage of our blog where you can find our latest blog posts and other information.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
         <link href="css/media.css" rel="stylesheet">
     </head>
     <body>
         <header>
             <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo2.PNG" alt="Wellness Blog logo"></a>
+                </div>
                 <label for="toggle">&#9776;</label>
                 <input type="checkbox" id="toggle"/>
                 <div class="menu">
@@ -22,24 +26,42 @@
             </nav>
         </header>
         <main>
+            <section class="top"></section>
             <section>
                 <div class="container">
                     <div class="left"></div>
                     <div class="right">
                         <div class="content">
                             <h1>Lifestyle</h1>
-                            <p>It is not a luxury to take care of oneself, it is a necessity</p>
-                            <a href="#" class="btn">Read more!</a>
+                            <p>It's not a luxury to take care of oneself, it's a necessity</p>
+                            <a href="blog.html" class="btn">Read more!</a>
                         </div>
                     </div>
                 </div>
             </section>
-            <div class="red-line">
+            <div class="text-line">
                 <h2>If you want to take care of others, you must also take care of yourself.</h2>
             </div>
-            <section>
+            <!-- <h3>Latest blog posts</h3> -->
+            <section class="recent-posts">
+                <button class="arrow">
+                    <span class="material-icons-outlined" id="${id}">chevron_left</span>
+                </button>
                 <div class="latest-post"></div>
+                <button class="arrow">
+                    <span class="material-icons-outlined" id="${id}">navigate_next</span>
+                </button>
             </section>
         </main>
+        <footer>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+            <p class="copyright">Copyright 2022</p>
+        </footer>
+      <script src="js/index.js"></script>
     </body>
 </html>
