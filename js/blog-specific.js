@@ -8,7 +8,7 @@ const id = params.get("id");
 
 console.log(id);
 
-const url = `https://projectexam.site/wp-json/wp/v2/posts/${id}?_embed=1/`;
+const url = `https://projectexam.site/wp-json/wp/v2/posts/${id}?_embed=1`;
 
 console.log(url);
 
