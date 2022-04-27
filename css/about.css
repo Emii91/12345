@@ -1,0 +1,18 @@
+.about-img {
+    background-image: url("../images/brooke-lark-kXQ3J7_2fpc-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 500px;
+    margin: 40px 0px;
+}
+
+.about h1 {
+    margin: 50px;
+    text-align: center;
+}
+
+.about p {
+    text-align: center;
+    padding: 30px;
+}

@@ -31,7 +31,7 @@ async function fetchPosts() {
 fetchPosts();
 
 function createHtml(details) {
-    detailContainer.innerHTML = `<div class="blog-post"><h1>${details.title.rendered}</h1>
-                                <div class="blog-image"><img src="${details._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}"></div>
+    detailContainer.innerHTML = `<div class="blog-image"><img src="${details._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}"></div>
+                                <div class="blog-post"><h1>${details.title.rendered}</h1>
                                 <p>${details.content.rendered}</p></div>`
 }

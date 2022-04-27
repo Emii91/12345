@@ -19,7 +19,8 @@ async function fetchPosts() {
                                             <div class="blog-h1"><h1 class="h1-post">${results[i].title.rendered}</h1><h2>Read more</h2></div></a>`;
         }                     
   } catch (error) {
-        console.log(error);
+        console.log("An error has accured");
+        resultsContainer.innerHTML = displayError("An error has occured");
    }
 }
 

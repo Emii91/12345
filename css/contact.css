@@ -4,6 +4,7 @@ label.contact-form {
     display: block;
     font-size: 20px;
     margin: 0 auto;
+    text-align: inherit;
 }
 
 img.contact-img {
@@ -32,11 +33,11 @@ label {
 }
 
 button {
-    background-color: #8C3723;
+    /* background-color: #CD9E90; */
     border: none;
     width: 200px;
     padding: 10px 15px;
-    color: white;
+    /* color: white; */
     margin-top: 10px;
     cursor: pointer;
     border-radius: 20px;
@@ -44,12 +45,12 @@ button {
     font-family: 'Source Sans Pro Regular';
 }
 
-input#address {
+/* input#address {
     padding: 30px 10px;
-}
+} */
 
 input#subject {
-    padding: 50px 10px;
+    padding: 50px 0px;
 }
 
 .error {
