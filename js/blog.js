@@ -6,13 +6,11 @@ async function fetchPosts() {
 
     try {
         const response = await fetch(url);
-        const json = await response.json();
+        const results = await response.json();
 
-        console.log(json);
+        console.log(results);
 
         resultsContainer.innerHTML = "";
-
-        const results = json;
 
         for (let i = 0; i < results.length; i++){
             
