@@ -8,9 +8,13 @@
 
 * {
     font-family: "ElMessiri";
-    background-color: #DDD8D2;
     color:dimgrey;
     margin: 0;
+}
+
+body {
+    background-color: #B7C0B8;
+    min-height: 100vh;
 }
 
 nav {
@@ -25,6 +29,16 @@ nav a {
     font-weight: bold;
 }
 
+nav a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+}
+
 label {
     text-align: end;
     font-size: 40px;
@@ -36,13 +50,13 @@ label {
     display: none;
 }
 
-section {
-    min-height: 70vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 70px 0;
+.top {
+    background-image: url(../images/drew-dizzy-graham-cTKGZJTMJQU-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    min-height: 80vh;
+    margin: 50px 0px 80px 0px;
 }
 
 .container {
@@ -65,14 +79,14 @@ section {
 .right p,
 .right a,
 .content {
-    background-color: #B0BAB5;
-    color: white;
+    background-color: #F2E9E3;
+    color: dimgray;
 }
 
 .right {
     width: 40%;
     min-height: 400px;
-    background-color:#B0BAB5;;
+    background-color:#F2E9E3;;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,38 +94,132 @@ section {
     border-radius: 10px;
     color: dimgray;
     margin-left: -50px;
+    box-shadow:
+        6.7px 6.7px 5.7px rgba(0, 0, 0, 0.028),
+        22.3px 22.3px 19.2px rgba(0, 0, 0, 0.042),
+        100px 100px 86px rgba(0, 0, 0, 0.07);
 }
 
 .right h1 {
-    font-size: 35px;
+    font-size: 25px;
 }
 
 .right p {
     margin: 20px 0;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 25px
 }
 
 .right a {
     text-decoration: none;
     text-transform: uppercase;
-    background-color: white;
+    background-color: #F2E9E3;
     color: dimgray;
-    padding: 20px 30px;
     display: inline-block;
     letter-spacing: 2px;
     font-weight: bold;
     margin-top: 30px;
+    cursor: pointer;
+}
+
+.right a:hover {
+    text-decoration: underline;
 }
 
 .content {
     padding: 40px;
 }
 
-.red-line h2 {
+.text-line h2 {
     text-align: center;
-    font-size: 30px;
-    padding: 50px;
+    font-size: 20px;
+    padding: 30px;
+    color: dimgray;
+    background-color: #F2E9E3;
+    margin-top: 50px;
+}
+
+
+/* Carousel */
+
+.recent-posts {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 70px 0;
+}
+
+.latest-post img {
+    width: 300px;
+    padding: 20px;
+}
+
+.latest-post a {
+    text-decoration: none;
+}
+
+.latest-post h1 {
+    font-size: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.latest-post {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 0 auto;
+}
+
+button.arrow {
+    border: none;
+    background-color: #B7C0B8;
+}
+
+.material-icons-outlined {
+    font-weight: bold;
+    font-size: 40px;
+    background-color: #B7C0B8;
+}
+
+
+/* Footer */
+
+footer {
+    position: sticky;
+    top: 100%;
+    background-color: #A39F9A;
+    min-height: 200px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+li a {
+    font-family: "ElMessiri";
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
     color: white;
-    background-color: #CD9E90;
+    margin: 30px;
+}
+
+li a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.copyright {
+    font-family: "ElMessiri";
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin: 20px;
 }
