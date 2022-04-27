@@ -1,6 +1,6 @@
 const resultsContainer = document.querySelector(".results");
 
-const url = "https://projectexam.site/wp-json/wp/v2/posts?_embed=1";
+const url = "https://projectexam.site/wp-json/wp/v2/posts?_embed=1&per_page=12";
 
 async function fetchPosts() {
 
